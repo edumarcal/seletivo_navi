@@ -18,7 +18,7 @@ class EnderecosTable extends Migration
             $table->string('nome_logradouro');
             $table->string('tipo_logradouro');
             $table->integer('numero')->unsigned();
-            $table->string('complemento');
+            $table->string('complemento')->nullable();
             $table->string('bairro');
             $table->string('localidade');
             $table->string('sigla', 2);

@@ -1,5 +1,5 @@
 <?php
-
+// Agradeço a DEUS pelo dom do conhecimento
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(EnderecosSeeder::class);
+        $this->call(InfoPessoaisSeeder::class);
     }
 }

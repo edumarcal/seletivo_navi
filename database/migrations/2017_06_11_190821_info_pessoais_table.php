@@ -19,7 +19,7 @@ class InfoPessoaisTable extends Migration
             $table->string('cpf');
             $table->string('rg');
             $table->date('data_nasc');
-            $table->char('genero', 2);
+            $table->string('genero');
             $table->integer('id_endereco')->unsigned();
             $table->foreign('id_endereco')->references('id')->on('enderecos');
             $table->timestamps();

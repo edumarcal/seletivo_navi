@@ -16,3 +16,15 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// Route::group([], function() {
+// 	Route::get('/enderecos', 'EnderecosControllerAPI@index');
+// 	Route::get('/enderecos/{id}', 'EnderecosControllerAPI@show');
+// 	Route::post('/enderecos', 'EnderecosControllerAPI@create');
+// 	Route::put('/enderecos/{id}', 'EnderecosControllerAPI@update');
+// 	Route::delete('/enderecos/{id}', 'EnderecosControllerAPI@destroy');
+// });
+
+Route::resource('/endereco', 'EnderecoController');
+Route::resource('/dadospessoais', 'InfoPessoaisController');
