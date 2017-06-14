@@ -25,7 +25,7 @@ class HomeController extends Controller
       public function index()
       {
         $info = InfoPessoais::all();
-        return view('home', array('inf' => $info));
+        return view('infopessoais', array('data' => $info));
       }
 
       /**
@@ -35,7 +35,7 @@ class HomeController extends Controller
        */
       public function create()
       {
-          //
+          return view('infopessoais.create');
       }
 
       /**
